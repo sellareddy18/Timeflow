@@ -29,5 +29,5 @@ Clone this repo
 ```
 
 ## Thank you 
-- Proudly created by @sellareddy18
+- Proudly created by [@sellareddy18](https://github.com/sellareddy18)
 - Linkedin [@se18y](https://www.linkedin.com/in/se18y/)
