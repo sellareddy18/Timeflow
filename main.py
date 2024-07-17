@@ -1,11 +1,14 @@
 from dotenv import load_dotenv
 import os
 from notion_client import Client
-from pprint import pprint
 
+# python scripts
+from scripts.welcome import welcome
 
 load_dotenv()
 notion = Client(auth=os.getenv('NOTION_TOKEN'))
 
-list_users_response = notion.users.list()
-pprint(list_users_response)
+users = notion.users.list()
+user_name = users['results'][0]['name']
+
+welcome(name=user_name)
