@@ -17,6 +17,7 @@ def welcome(name):
         user_input = input("Are you ready to schedule your day? (Y for yes, N: for no): ")
         if user_input == "Y":
             print("Amazing 🥳")
+            time.sleep(1)
             break
         elif user_input == "N":
             print("That's okay let us know when you are ready.")
@@ -25,6 +26,4 @@ def welcome(name):
             print("Invalid input please respond with a Y or N")
 
     if user_input == "Y": 
-        print("fetching todos from database")
-        # run function here
-        print("fetched the todos")
+        print('Fetching tasks from Notion... This might take a few seconds. ⏰')
