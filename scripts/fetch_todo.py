@@ -38,11 +38,12 @@ write_dict_to_file_as_json(db_info, "db_info.json")
 db_rows = notion.databases.query(database_id=database_id) 
 write_dict_to_file_as_json(db_rows, "db_rows.json")
 
-for row in db_rows['results']:
-    task = safe_get(row, 'properties.Tasks.title.0.plain_text')
-    due_data = safe_get(row, 'properties.Due Date.date.start')
-    priority = safe_get(row, 'properties.priority.select.name')
-    status = safe_get(row, 'properties.Status.status.name')
-    est = safe_get(row, 'properties.Estimated time needed.rich_text.0.plain_text')
-    
-    print(f"Task: {task}, Due Date: {due_data}, Priority: {priority}, Status: {status}, Est: {est}")
+def fetch_tasks_from_db():
+    for row in db_rows['results']:
+        task = safe_get(row, 'properties.Tasks.title.0.plain_text')
+        due_data = safe_get(row, 'properties.Due Date.date.start')
+        priority = safe_get(row, 'properties.priority.select.name')
+        status = safe_get(row, 'properties.Status.status.name')
+        est = safe_get(row, 'properties.Estimated time needed.rich_text.0.plain_text')
+        
+        print(f"Task: {task}, Due Date: {due_data}, Priority: {priority}, Status: {status}, Est: {est}")
