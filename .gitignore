@@ -1,3 +1,4 @@
 .env
 __pycache__
 db_info.json
+db_rows.json
