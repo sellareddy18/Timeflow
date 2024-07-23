@@ -27,3 +27,4 @@ def welcome(name):
 
     if user_input == "Y": 
         print('Fetching tasks from Notion... This might take a few seconds. ⏰')
+        time.sleep(1)
