@@ -24,10 +24,15 @@ Contributions are welcome! Please fork the repository, make any changes you want
 
 Clone this repo
 
- ```sh
-   git clone https://github.com/sellareddy18/Timeflow.git
+```sh
+  git clone https://github.com/sellareddy18/Timeflow.git
 ```
 
-## Thank you 
+## Credits
+
+[Notion API in 5 minutes](https://indydevdan.com/dev/notion-in-5-minutes)
+
+## Thank you
+
 - Proudly created by [@sellareddy18](https://github.com/sellareddy18)
 - Linkedin [@se18y](https://www.linkedin.com/in/se18y/)
