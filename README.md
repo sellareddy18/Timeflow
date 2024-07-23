@@ -30,7 +30,8 @@ Clone this repo
 
 ## Credits
 
-[Notion API in 5 minutes](https://indydevdan.com/dev/notion-in-5-minutes)
+[Notion API in 5 minutes - IndyDevDan](https://indydevdan.com/dev/notion-in-5-minutes)
+[Lambda Function - FreeCodeCamp](https://www.freecodecamp.org/news/lambda-sort-list-in-python/)
 
 ## Thank you
 
