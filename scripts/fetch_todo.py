@@ -66,8 +66,6 @@ def fetch_tasks_from_db():
 
     print("Sorting tasks based on priority, due date, and estimated time needed.... 🤖")
     time.sleep(1)
-    print("Here are your tasks:")
-    time.sleep(1)
     for task in todos:
         print(f"Task: {task['task']}, Due Date: {task['due_date']}, Priority: {task['priority']}, Status: {task['status']}, Est: {task['est_time']}")
 
