@@ -68,4 +68,9 @@ def fetch_tasks_from_db():
     time.sleep(1)
     for task in todos:
         print(f"Task: {task['task']}, Due Date: {task['due_date']}, Priority: {task['priority']}, Status: {task['status']}, Est: {task['est_time']}")
+    
+    print("Creating your schedule on Google Calendar... 📆")
+    
+    #add events to calendar here using Google Calendar API 
 
+    
